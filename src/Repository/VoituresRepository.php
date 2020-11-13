@@ -12,12 +12,21 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method Voitures[]    findAll()
  * @method Voitures[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
+
 class VoituresRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Voitures::class);
     }
+
+    // public function JeanLuc(int $value) {
+
+    //     $query = $em->createQuery("SELECT v FROM voitures v INNER JOIN constructeurs c ON v.id_constructeur_id = c.id WHERE v.id = :value");
+    //     $query->setParameter('value', $value);
+    //     $result = $query->getResult();
+    //     return $result;
+    // }
 
     // /**
     //  * @return Voitures[] Returns an array of Voitures objects

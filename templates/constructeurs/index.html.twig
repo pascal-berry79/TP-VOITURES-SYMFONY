@@ -4,8 +4,11 @@
 
 {% block body %}
     <h2 class="text-center">Les Constructeurs</h2>
-    {% for constructeur in constructeurs %}
-        <a href="/constructeurs/{{constructeur.id}}"><img src="{{constructeur.logo}}" alt="{{constructeur.nom}}"></a>
-    {% endfor %}
+
+    <div class="constructeurs-list">
+        {% for constructeur in constructeurs %}
+            <a href="/constructeurs/{{constructeur.id}}"><img src="{{constructeur.logo}}" alt="{{constructeur.nom}}"></a>
+        {% endfor %}
+    </div>
 {% endblock %}
 

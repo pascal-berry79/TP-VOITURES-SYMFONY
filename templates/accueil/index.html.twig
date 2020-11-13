@@ -13,9 +13,11 @@
 
     <h2 class="text-center">Les derniers modèles...</h2>
 
-    {% for voiture in voitures %}
-        <a href="/voitures/{{ voiture.id}}"><img src="{{voiture.image}}" alt="{{voiture.modele}}">{{voiture.modele}}</a>
-    {% endfor %}
+    <div class="gallery-lastcar">
+        {% for voiture in voitures %}
+                <a href="/voitures/{{ voiture.id}}"><img src="{{voiture.image}}" alt="{{voiture.modele}}">{{voiture.modele}}</a>
+        {% endfor %}
+    </div>
     <h2 class="text-center">Constructeur random...</h2>
 
     {# <img src="{{constructeur.logo}}" alt="{{constructeur.nom}}"> #}

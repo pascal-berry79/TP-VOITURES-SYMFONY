@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}La {{voiture.modele}}{% endblock %}
+
+{% block body %}
+    <h2 class="text-center">La {{voiture.modele}}</h2>
+    <p class="text-center">{{voiture.annee}}</p>
+    
+    {# <a href="/constructeurs/{{}}"><img src="{{}}" alt="{{}}"></a> #}
+    <div>
+        <img src="{{voiture.image}}" alt="{{voiture.modele}}">
+        <p>{{voiture.resume}}</p>
+    </div>
+{% endblock %}

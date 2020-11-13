@@ -22,9 +22,9 @@ class ConstructeursRepository extends ServiceEntityRepository
     // /**
     //  * @return Constructeurs[] Returns an array of Constructeurs objects
     //  */
-    // public function findRandomConstructeurs($value){
-    //     return $this->createQuery('c')
-    //         ->orderBy('c.id','RAND()')
+    // public function findRandomConstructeurs(){
+    //     return $this->createQueryBuilder('c')
+    //         ->orderBy('RAND()')
     //         ->setMaxResults(1)
     //         ->getQuery()
     //         ->getResult()

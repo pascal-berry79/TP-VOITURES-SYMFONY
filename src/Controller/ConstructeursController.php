@@ -22,8 +22,4 @@ class ConstructeursController extends AbstractController
             'constructeurs' => $constructeurs,
         ]);
     }
-
-    /**
-     * @Route("/constructeurs", name="constructeurs")
-     */
 }

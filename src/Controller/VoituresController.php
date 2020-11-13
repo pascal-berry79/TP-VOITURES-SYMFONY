@@ -66,6 +66,18 @@ class VoituresController extends AbstractController
         return $this->render('voitures/create.html.twig', [
             'formulaire'=>$form->createView()
         ]);
-
     }
+
+    /**
+     * @Route("/voitures/{id}")
+     */
+     public function voiturePage(int $id, EntityManagerInterface $em): Response
+     {
+        $repository=$em->getRepository(Voitures::class);
+        $voiture = $repository->find($id);
+
+        return $this->render('voitures/voiture.html.twig', [
+            'voiture' => $voiture,
+        ]);
+     }
 }
