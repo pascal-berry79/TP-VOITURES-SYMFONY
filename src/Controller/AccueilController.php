@@ -22,7 +22,7 @@ class AccueilController extends AbstractController
     {
 
         $voitures = $VoituresRepository->findBy([], ['id'=>'DESC'], 3);
-        // $constructeur = $ConstructeursRepository->find('RAND()');
+        // $constructeur = $ConstructeursRepository->findRandomConstructeurs(Constructeurs::class);
         return $this->render('accueil/index.html.twig', [
             'voitures' => $voitures,
             // 'constructeur' => $constructeur,
