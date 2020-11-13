@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Les Voitures{% endblock %}
+
+{% block body %}
+    <h2>Les voitures</h2>
+    {% for voiture in voitures %}
+        <a href="/voitures/{{voiture.id}}"><img src="TP-VOITURES-SYMFONY/{{voiture.image}}" alt="{{voiture.modele}}"></a>
+    {% endfor %}
+{% endblock %}
