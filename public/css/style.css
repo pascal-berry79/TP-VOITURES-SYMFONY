@@ -22,12 +22,17 @@ Colors:
     White #FFFFFF
 
 Fonts:
+    font-family: 'Monoton',cursive;
 
 ******************************************/
 
 /******************************/
 /*     01. General Styles     */
 /******************************/
+
+h1 {
+    font-family: 'Monoton', cursive;
+}
 
 main {
     padding: 2%;
