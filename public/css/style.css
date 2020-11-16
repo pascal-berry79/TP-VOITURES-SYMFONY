@@ -18,6 +18,10 @@ Table Of Contents:
 
 /*****************************************
 Colors:
+    Dark #212529
+    White #FFFFFF
+
+Fonts:
 
 ******************************************/
 
@@ -84,6 +88,26 @@ main .voitures-list img{
 main .voiture img{
     width: 100%;
     padding: 1% 2%;
+}
+
+/******************************/
+/*     06. Créer            */
+/******************************/
+
+main form {
+    padding: 5%;
+}
+
+main form input, textarea, select {
+    width: 100%;
+}
+
+main form button{
+    margin: 5% 0;
+    background-color: #212529;
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 5px;
 }
 
 /******************************/
@@ -178,7 +202,7 @@ main .voiture img{
     }
 }
 
-/* 04.Voiture *********************/
+/* 05.Voiture *********************/
 @media screen and (min-width: 768px) {
 
     main .voiture {
@@ -187,5 +211,19 @@ main .voiture img{
 
     main .voiture img{
         width: 50%;
+    }
+}
+
+/* 06. Créer *********************/
+@media screen and (min-width: 1024px) {
+    form {
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    form {
+        width: 30%;
     }
 }
