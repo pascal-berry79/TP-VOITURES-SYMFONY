@@ -22,4 +22,18 @@ class ConstructeursController extends AbstractController
             'constructeurs' => $constructeurs,
         ]);
     }
+    
+     /**
+     * @Route("/constructeurs/{id}")
+     */
+    public function constructPage(int $id, EntityManagerInterface $em): Response
+    {
+       $repository=$em->getRepository(Constructeurs::class);
+       $constructeur = $repository->find($id);
+
+       return $this->render('constructeurs/constructeur.html.twig', [
+           'constructeur' => $constructeur,
+       ]);
+    }
+
 }
