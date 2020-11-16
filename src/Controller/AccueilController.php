@@ -16,6 +16,7 @@ use App\Entity\Constructeurs;
 class AccueilController extends AbstractController
 {
     /**
+     * @Route("/index")
      * @Route("/", name="accueil")
      */
     public function index(VoituresRepository $VoituresRepository,ConstructeursRepository $ConstructeursRepository, EntityManagerInterface $em): Response

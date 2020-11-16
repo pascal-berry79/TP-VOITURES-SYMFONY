@@ -10,7 +10,9 @@ Table Of Contents:
 02. Accueil
 03. Constructeurs
 04. Voitures
-05. Media Queries
+05. Voiture
+06. Créer
+07. Media Queries
 
 ******************************************/
 
@@ -22,6 +24,10 @@ Colors:
 /******************************/
 /*     01. General Styles     */
 /******************************/
+
+main {
+    padding: 2%;
+}
 
 /******************************/
 /*     02. Accueil            */
@@ -72,10 +78,19 @@ main .voitures-list img{
 }
 
 /******************************/
-/*     01. Media Queries      */
+/*     05. Voiture            */
 /******************************/
 
-/* Accueil ********************/
+main .voiture img{
+    width: 100%;
+    padding: 1% 2%;
+}
+
+/******************************/
+/*     07. Media Queries      */
+/******************************/
+
+/* 02. Accueil ********************/
 @media screen and (min-width: 768px) {
 
     main .gallery-lastcar {
@@ -96,7 +111,7 @@ main .voitures-list img{
     }
 }
 
-/* Constructeurs ********************/
+/* 03. Constructeurs ********************/
 @media screen and (min-width: 768px) {
 
     main .constructeurs-list {
@@ -128,7 +143,7 @@ main .voitures-list img{
 }
 
 
-/* Voitures ********************/
+/* 04.Voitures ********************/
 @media screen and (min-width: 768px) {
 
     main .voitures-list{
@@ -160,5 +175,17 @@ main .voitures-list img{
     main .voitures-list img{
         width:100%;
         padding: 1% 1%;
+    }
+}
+
+/* 04.Voiture *********************/
+@media screen and (min-width: 768px) {
+
+    main .voiture {
+        display: flex;
+    }
+
+    main .voiture img{
+        width: 50%;
     }
 }

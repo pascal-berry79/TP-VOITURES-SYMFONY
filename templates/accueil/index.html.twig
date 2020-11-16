@@ -11,11 +11,11 @@
         Dès lors, Les profils s'étirent en mouvance féminine, les proues, parées de chromes, s'élargissent et se virilisent avec cette retenue tout à fait remarquable dans l’agressivité, les poupes s'abaissent et s’allongent, la ligne de fuite veut que l'auto colle à la route.
     </p>
 
-    <h2 class="text-center">Les derniers modèles...</h2>
+    <h2 class="text-center">Les derniers Modèles...</h2>
 
     <div class="gallery-lastcar">
         {% for voiture in voitures %}
-                <a href="/voitures/{{ voiture.id}}"><img src="{{voiture.image}}" alt="{{voiture.modele}}">{{voiture.modele}}</a>
+                <a href="voitures/{{voiture.id}}"><img src="{{voiture.image}}" alt="{{voiture.modele}}">{{voiture.modele}}</a>
         {% endfor %}
     </div>
     <h2 class="text-center">Constructeur random...</h2>
