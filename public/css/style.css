@@ -9,10 +9,11 @@ Table Of Contents:
 01. General Styles
 02. Accueil
 03. Constructeurs
-04. Voitures
-05. Voiture
-06. Créer
-07. Media Queries
+04. Constructeur
+05. Voitures
+06. Voiture
+07. Créer
+08. Media Queries
 
 ******************************************/
 
@@ -65,7 +66,7 @@ main .gallery-lastcar img:hover {
 }
 
 /******************************/
-/*     04. Constructeur       */
+/*     03. Constructeurs      */
 /******************************/
 
 main .constructeurs-list a{
@@ -78,7 +79,11 @@ main .constructeurs-list img{
 }
 
 /******************************/
-/*     04. Voitures           */
+/*     04. Constructeur      */
+/******************************/
+
+/******************************/
+/*     05. Voitures           */
 /******************************/
 
 main .voitures-list{
@@ -91,7 +96,7 @@ main .voitures-list img{
 }
 
 /******************************/
-/*     05. Voiture            */
+/*     06. Voiture            */
 /******************************/
 
 main .voiture img{
@@ -100,7 +105,7 @@ main .voiture img{
 }
 
 /******************************/
-/*     06. Créer            */
+/*     07. Créer              */
 /******************************/
 
 main form {
@@ -120,7 +125,7 @@ main form button{
 }
 
 /******************************/
-/*     07. Media Queries      */
+/*     08. Media Queries      */
 /******************************/
 
 /* 02. Accueil ********************/
@@ -193,7 +198,7 @@ main form button{
 }
 
 
-/* 04.Voitures ********************/
+/* 05.Voitures ********************/
 @media screen and (min-width: 768px) {
 
     main .voitures-list{
@@ -235,7 +240,7 @@ main form button{
     }
 }
 
-/* 05.Voiture *********************/
+/* 06.Voiture *********************/
 @media screen and (min-width: 768px) {
 
     main .voiture {
@@ -247,7 +252,7 @@ main form button{
     }
 }
 
-/* 06. Créer *********************/
+/* 07. Créer *********************/
 @media screen and (min-width: 1024px) {
     form {
         margin: 0 auto;
