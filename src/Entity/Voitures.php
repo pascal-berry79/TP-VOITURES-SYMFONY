@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Constructeurs;
 use App\Repository\VoituresRepository;
 use Doctrine\ORM\Mapping as ORM;
 

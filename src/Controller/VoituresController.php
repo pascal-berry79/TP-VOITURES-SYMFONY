@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Voitures;
+use App\Entity\Constructeurs;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -23,7 +24,6 @@ class VoituresController extends AbstractController
     {
         $repository=$em->getRepository(Voitures::class);
         $voitures = $repository -> findAll();
-
         return $this->render('voitures/index.html.twig', [
             'voitures' => $voitures,
         ]);
@@ -74,7 +74,8 @@ class VoituresController extends AbstractController
      public function voiturePage(int $id, EntityManagerInterface $em): Response
      {
         $repository=$em->getRepository(Voitures::class);
-        $voiture = $repository->find($id);
+        $voiture = $repository->JeanLuc($id);
+        // dd($voiture);
 
         return $this->render('voitures/voiture.html.twig', [
             'voiture' => $voiture,

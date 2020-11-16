@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\Voitures;
+use App\Entity\Constructeurs;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
@@ -20,13 +21,13 @@ class VoituresRepository extends ServiceEntityRepository
         parent::__construct($registry, Voitures::class);
     }
 
-    // public function JeanLuc(int $value) {
-
-    //     $query = $em->createQuery("SELECT v FROM voitures v INNER JOIN constructeurs c ON v.id_constructeur_id = c.id WHERE v.id = :value");
-    //     $query->setParameter('value', $value);
-    //     $result = $query->getResult();
-    //     return $result;
-    // }
+    public function JeanLuc(int $value) {
+        $em = $this->getEntityManager();
+        $query = $em->createQuery("SELECT v, c FROM App\Entity\Voitures v JOIN v.id_constructeur c WHERE v.id = :value");
+        $query->setParameter('value', $value);
+        $result = $query->getResult();
+        return $result;
+    }
 
     // /**
     //  * @return Voitures[] Returns an array of Voitures objects
