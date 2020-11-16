@@ -55,6 +55,10 @@ main .gallery-lastcar img{
     width: 100%;
 }
 
+main .gallery-lastcar img:hover {
+    width: 100%;
+}
+
 /******************************/
 /*     04. Constructeur       */
 /******************************/
@@ -126,6 +130,16 @@ main form button{
     main .gallery-lastcar a{
         width: 30%;
     }
+
+    main .gallery-lastcar img {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+    }
+
+    main .gallery-lastcar img:hover {
+        filter: none;
+        -webkit-filter: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -149,12 +163,19 @@ main form button{
         align-items: center;
     }
 
-    main .constructeurs-list a{
+    main .constructeurs-list a {
         width: 50%;
     }
     
-    main .constructeurs-list img{
+    main .constructeurs-list img {
         width: 100%;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+    }
+
+    main .constructeurs-list img:hover {
+        filter: none;
+        -webkit-filter: none;
     }
 
 }
@@ -192,13 +213,20 @@ main form button{
         padding: 3% 0%;
     }
 
-    main .voitures-list a{
+    main .voitures-list a {
         width: 25%;
     }
 
-    main .voitures-list img{
-        width:100%;
+    main .voitures-list img {
+        width: 100%;
         padding: 1% 1%;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+    }
+
+    main .voitures-list img:hover {
+        filter: none;
+        -webkit-filter: none;
     }
 }
 
