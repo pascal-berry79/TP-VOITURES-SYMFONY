@@ -11,6 +11,10 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Voitures
 {
+    public function __toString(): string
+    {
+       return $this->modele;
+    }
     /**
      * @ORM\Id
      * @ORM\GeneratedValue

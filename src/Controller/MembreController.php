@@ -2,12 +2,9 @@
 
 namespace App\Controller;
 
-use App\Entity\Voitures;
-use App\Entity\Constructeurs;
-use Doctrine\ORM\EntityManagerInterface;
+use App\Entity\Member;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
@@ -15,27 +12,25 @@ use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
-class VoituresController extends AbstractController
+class MembreController extends AbstractController
 {
     /**
-     * @Route("/voitures", name="voitures")
+     * @Route("/membre", name="membre")
      */
-    public function index(EntityManagerInterface $em): Response
+    public function index(): Response
     {
-        $repository=$em->getRepository(Voitures::class);
-        $voitures = $repository -> findAll();
-        return $this->render('voitures/index.html.twig', [
-            'voitures' => $voitures,
+        return $this->render('membre/index.html.twig', [
+            'controller_name' => 'MembreController',
         ]);
     }
 
     /**
      * @Route("/voitures/create", name="create", methods={"GET", "POST"})
      */
-    public function create(Request $request, EntityManagerInterface $em ): Response
+    public function inscription(Request $request, EntityManagerInterface $em ): Response
     {
         $form= $this->createFormBuilder()
-                -> add ('modele', TextType::class)
+                -> add ('email', TextType::class)
                 -> add ('annee', IntegerType::class)
                 -> add ('image', TextType::class)
                 -> add ('resume', TextareaType::class)
@@ -68,21 +63,4 @@ class VoituresController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/voitures/{id}", name="voiture")
-     * @param int $id
-     * @param EntityManagerInterface $em
-     * @return Response
-     */
-     public function voiturePage(int $id, EntityManagerInterface $em): Response
-     {
-        $repository=$em->getRepository(Voitures::class);
-        $voiture = $repository->find($id);
-        //dd($voiture);
-
-        return $this->render('voitures/voiture.html.twig', [
-            'voiture' => $voiture,
-            'constructeur' => $voiture->getIdConstructeur(),
-        ]);
-     }
 }

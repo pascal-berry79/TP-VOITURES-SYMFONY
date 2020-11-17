@@ -1,15 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}La {{voiture[0].modele}}{% endblock %}
+{% block title %}La {{voiture.modele}}{% endblock %}
 
 {% block body %}
-    <h2 class="text-center">La {{voiture[0].modele}}</h2>
-    <p class="text-center">{{voiture[0].annee}}</p>
+    <h2 class="text-center">La {{voiture.modele}}</h2>
+    <p class="text-center">{{voiture.annee}}</p>
     
-    {# <a href="/constructeurs/{{}}"><img src="{{}}" alt="{{}}"></a> #}
     <div class="voiture">
-        <img src="../{{voiture[0].image}}" alt="{{voiture[0].modele}}">
-        <p>{{voiture[0].resume}}</p>
+        <img src="../{{voiture.image}}" alt="{{voiture.modele}}">
+        <p>{{voiture.resume}}</p>
     </div>
-    <a href="../constructeurs/{{voiture[0].idconstructeur.id}}"><img src="../{{voiture[0].idconstructeur.logo}}" alt="{{voiture[0].idconstructeur.nom}}"></a>
+    <a href="{{ path("constructeur",{id:constructeur.id}) }}"><img src="../{{constructeur.logo}}" alt="{{constructeur.nom}}"></a>
 {% endblock %}

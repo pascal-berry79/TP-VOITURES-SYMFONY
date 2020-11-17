@@ -12,6 +12,11 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Constructeurs
 {
+    public function __toString(): string
+    {
+       return $this->nom;
+    }
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue

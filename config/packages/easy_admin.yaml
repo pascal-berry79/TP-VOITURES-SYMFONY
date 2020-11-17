@@ -1,6 +1,17 @@
 easy_admin:
+   site_name: 'TP_Voitures'
+
+   design:
+      menu: 
+        - { route: 'accueil', label: 'Retour au site', icon: 'home' }
+        - { entity: 'Constructeurs', icon: 'industry'}
+        - { entity: 'Voitures', icon: 'car'}
+      brand_color: '#008000'
+   
    entities:
      # List the entity class name you want to manage
-       - App\Entity\Voitures
-       - App\Entity\Constructeurs
+     Constructeurs:
+       class: App\Entity\Constructeurs
+     Voitures:
+       class: App\Entity\Voitures
 #        - App\Entity\User
