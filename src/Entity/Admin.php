@@ -18,28 +18,51 @@ class Admin implements UserInterface
      * @ORM\Column(type="integer")
      */
     private $id;
-
+    
+    /**
+     * @ORM\Column(type="string", length=180, unique=true)
+     */
+    private $email;
+    
     /**
      * @ORM\Column(type="string", length=180, unique=true)
      */
     private $username;
-
+    
     /**
      * @ORM\Column(type="json")
      */
     private $roles = [];
-
+    
     /**
      * @var string The hashed password
      * @ORM\Column(type="string")
      */
     private $password;
 
+    public function __toString(): string
+    {
+        return $this->username;
+    }
+    
     public function getId(): ?int
     {
         return $this->id;
     }
 
+    public function getEmail(): ?string
+    {
+        return $this->email;
+    }
+
+    public function setEmail(string $email): self
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    
     /**
      * A visual identifier that represents this user.
      *
@@ -89,11 +112,6 @@ class Admin implements UserInterface
         $this->password = $password;
 
         return $this;
-    }
-
-    public function __toString(): string
-    {
-        return $this->username;
     }
 
     /**
