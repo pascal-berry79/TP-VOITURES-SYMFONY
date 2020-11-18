@@ -30,16 +30,16 @@
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/">Accueil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="{{ path("accueil") }}">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/constructeurs">Constructeurs</a>
+                        <a class="nav-link" href="{{ path("constructeurs") }}">Constructeurs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/voitures">Voitures</a>
+                        <a class="nav-link" href="{{ path("voitures") }}">Voitures</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/voitures/create">Créer</a>
+                        <a class="nav-link" href="{{ path("app_register") }}">Inscription</a>
                     </li>
                 </div>
             </nav>
