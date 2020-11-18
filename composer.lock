@@ -5,7 +5,11 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "content-hash": "f05862d296a41a920f25e1833d048a0c",
+=======
+    "content-hash": "42ee161e83e4b1a248e18b1dcf3ebed8",
+>>>>>>> parent of a1c2f9a... ajout easy bundle
 =======
     "content-hash": "42ee161e83e4b1a248e18b1dcf3ebed8",
 >>>>>>> parent of a1c2f9a... ajout easy bundle
@@ -1464,6 +1468,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "easycorp/easyadmin-bundle",
             "version": "v2.3.11",
             "source": {
@@ -1562,6 +1567,10 @@
         {
             "name": "egulias/email-validator",
             "version": "2.1.24",
+=======
+            "name": "ocramius/proxy-manager",
+            "version": "2.2.3",
+>>>>>>> parent of a1c2f9a... ajout easy bundle
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
@@ -1628,6 +1637,7 @@
             "time": "2020-11-14T15:56:27+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "laminas/laminas-code",
             "version": "3.5.0",
             "source": {
@@ -1920,6 +1930,8 @@
             "time": "2020-11-12T17:04:46+00:00"
         },
         {
+=======
+>>>>>>> parent of a1c2f9a... ajout easy bundle
             "name": "psr/cache",
             "version": "1.0.1",
             "source": {
@@ -3168,6 +3180,7 @@
         },
         {
             "name": "symfony/filesystem",
+<<<<<<< HEAD
             "version": "v5.1.8",
             "source": {
                 "type": "git",
@@ -3230,6 +3243,8 @@
         },
         {
             "name": "symfony/finder",
+=======
+>>>>>>> parent of a1c2f9a... ajout easy bundle
             "version": "v5.1.8",
             "source": {
                 "type": "git",
@@ -5300,6 +5315,7 @@
         },
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             "name": "symfony/swiftmailer-bundle",
             "version": "v3.5.1",
             "source": {
@@ -5470,6 +5486,8 @@
             "time": "2020-10-24T12:01:57+00:00"
         },
         {
+=======
+>>>>>>> parent of a1c2f9a... ajout easy bundle
 =======
 >>>>>>> parent of a1c2f9a... ajout easy bundle
             "name": "symfony/translation-contracts",
