@@ -24,7 +24,7 @@ class ConstructeursController extends AbstractController
     }
     
      /**
-     * @Route("/constructeurs/{id}")
+     * @Route("/constructeurs/{id}", name="constructeur")
      */
     public function constructPage(int $id, EntityManagerInterface $em): Response
     {

@@ -69,16 +69,17 @@ class VoituresController extends AbstractController
     }
 
     /**
-     * @Route("/voitures/{id}")
+     * @Route("/voitures/{id}", name="voiture")
      */
      public function voiturePage(int $id, EntityManagerInterface $em): Response
      {
         $repository=$em->getRepository(Voitures::class);
-        $voiture = $repository->JeanLuc($id);
-        // dd($voiture);
+        $voiture = $repository->find($id);
+        //dd($voiture->getIdConstructeur());
 
         return $this->render('voitures/voiture.html.twig', [
             'voiture' => $voiture,
+            'constructeur' => $voiture->getIdConstructeur(),
         ]);
      }
 }
