@@ -81,6 +81,7 @@
     "doctrine/sql-formatter": {
         "version": "1.1.1"
     },
+<<<<<<< HEAD
     "easycorp/easyadmin-bundle": {
         "version": "2.0",
         "recipe": {
@@ -106,14 +107,13 @@
     "laminas/laminas-zendframework-bridge": {
         "version": "1.1.1"
     },
+=======
+>>>>>>> parent of a1c2f9a... ajout easy bundle
     "nikic/php-parser": {
         "version": "v4.10.2"
     },
     "ocramius/proxy-manager": {
         "version": "2.9.1"
-    },
-    "pagerfanta/pagerfanta": {
-        "version": "v2.5.1"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -174,9 +174,6 @@
     },
     "symfony/event-dispatcher-contracts": {
         "version": "v2.2.0"
-    },
-    "symfony/expression-language": {
-        "version": "v5.1.8"
     },
     "symfony/filesystem": {
         "version": "v5.1.8"
@@ -314,30 +311,6 @@
             "./config/routes.yaml"
         ]
     },
-    "symfony/security-bundle": {
-        "version": "5.1",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "5.1",
-            "ref": "0a4bae19389d3b9cba1ca0102e3b2bccea724603"
-        },
-        "files": [
-            "./config/packages/security.yaml"
-        ]
-    },
-    "symfony/security-core": {
-        "version": "v5.1.8"
-    },
-    "symfony/security-csrf": {
-        "version": "v5.1.8"
-    },
-    "symfony/security-guard": {
-        "version": "v5.1.8"
-    },
-    "symfony/security-http": {
-        "version": "v5.1.8"
-    },
     "symfony/service-contracts": {
         "version": "v2.2.0"
     },
@@ -347,6 +320,7 @@
     "symfony/string": {
         "version": "v5.1.8"
     },
+<<<<<<< HEAD
     "symfony/swiftmailer-bundle": {
         "version": "2.5",
         "recipe": {
@@ -374,6 +348,8 @@
             "./translations/.gitignore"
         ]
     },
+=======
+>>>>>>> parent of a1c2f9a... ajout easy bundle
     "symfony/translation-contracts": {
         "version": "v2.3.0"
     },
@@ -392,19 +368,6 @@
             "./config/packages/test/twig.yaml",
             "./config/packages/twig.yaml",
             "./templates/base.html.twig"
-        ]
-    },
-    "symfony/validator": {
-        "version": "4.3",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "4.3",
-            "ref": "d902da3e4952f18d3bf05aab29512eb61cabd869"
-        },
-        "files": [
-            "./config/packages/test/validator.yaml",
-            "./config/packages/validator.yaml"
         ]
     },
     "symfony/var-dumper": {
