@@ -44,6 +44,11 @@ class Voitures
      */
     private $id_constructeur;
 
+    public function __toString()
+{
+    return $this->modele;
+}
+
     public function getId(): ?int
     {
         return $this->id;
